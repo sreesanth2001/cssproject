@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container & Spacing</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    1.Margin
+    <!-- https://tailwindcss.com/docs/margin -->
+    <div class=" container bg-black p-7 text-white flex flex-col gap-4 text-center ">
+      <div class="mt-28 bg-lime-500 w-20 h-20 flex items-center justify-center">mt-28</div>
+      <div class="mb-8 bg-lime-500 w-20 h-20 flex items-center justify-center" >mb-8</div>
+      <div class="ml-8 bg-lime-500 w-20 h-20 flex items-center justify-center">ml-8</div>
+      <div class="mr-4 bg-lime-500 w-20 h-20 flex items-center justify-center">mr-4</div>
+      <br>
+      <div class="m-8 bg-pink-500 w-20 h-20 flex items-center justify-center">m-8</div>
+      <div class="my-8 bg-blue-500 w-20 h-20 flex items-center justify-center">my-8</div>
+      <div class="mx-8 bg-purple-500 w-20 h-20 flex items-center justify-center">mx-8</div>
+      <div class="-mt-4  bg-yellow-500 w-20 h-20 flex items-center justify-center">-mt-4</div>
+      <div dir="ltr">
+        <div class="ms-8 bg-sky-500 w-20 h-20 flex items-center justify-center">ms-8</div>
+        <div class="me-8 bg-red-500 w-20 h-20 flex items-center justify-center">me-8</div>
+      </div>
+      <div dir="rtl">
+        <div class="ms-8 bg-sky-500 w-20 h-20 flex items-center justify-center">ms-8</div>
+        <div class="me-8 bg-red-500 w-20 h-20 flex items-center justify-center">me-8</div>
+     </div>
+    </div>
+    <br>
+
+    2. Arbitrary Spacing
+     <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
+     <div class="container bg-black p-7 text-white flex flex-col mt-10">
+      <table class=" border-separate border-spacing-2 border border-zinc-500 text-center ">
+        <thead>
+          <tr>
+            <th class="border border-slate-600 ">State</th>
+            <th class="border border-slate-600 ">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-slate-700 ">Indiana</td>
+            <td class="border border-slate-700 ">Indianapolis</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ">Ohio</td>
+            <td class="border border-slate-700 ">Columbus</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ">Michigan</td>
+            <td class="border border-slate-700 ">Detroit</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table class=" border-separate border-spacing-x-2 border border-zinc-500 text-center ">
+        <thead>
+          <tr>
+            <th class="border border-slate-600 ">State</th>
+            <th class="border border-slate-600 ">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-slate-700 ">Indiana</td>
+            <td class="border border-slate-700 ">Indianapolis</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ">Ohio</td>
+            <td class="border border-slate-700 ">Columbus</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ">Michigan</td>
+            <td class="border border-slate-700 ">Detroit</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+       <table class=" border-separate border-spacing-y-2 border border-zinc-500 text-center">
+        <thead>
+          <tr>
+            <th class="border border-slate-600 ">State</th>
+            <th class="border border-slate-600 ">City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-slate-700 ">Indiana</td>
+            <td class="border border-slate-700 ">Indianapolis</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ">Ohio</td>
+            <td class="border border-slate-700 ">Columbus</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ">Michigan</td>
+            <td class="border border-slate-700 ">Detroit</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    3. Padding
+    <!-- https://tailwindcss.com/docs/padding -->
+    <div class=" container bg-black p-7 text-white flex flex-col gap-4 ">
+      <div class="pt-6 bg-red-900 w-20 h-20 ">pt</div>
+      <div class="pr-4 bg-red-900 w-20 h-20 " >pr</div>
+      <div class="pb-8 bg-red-900 w-20 h-20 ">pb</div>
+      <div class="pl-2 bg-red-900 w-20 h-20 ">pl</div>
+      <div class="px-8 bg-red-900 w-20 h-20 ">px</div>
+      <div class="py-8 bg-red-900 w-20 h-20 ">py</div>
+      <div class="p-8 bg-red-900 w-20 h-20 ">p</div>
+      <br>
+      <div dir="ltr">
+        <div class="ps-8 bg-sky-900 w-28 h-20 ">padding</div>
+        <div class="pe-8 bg-red-900 w-28 h-20 ">padding</div>
+      </div>
+      <div dir="rtl">
+        <div class="ps-8 bg-sky-900 w-28 h-20 ">padding</div>
+        <div class="pe-8 bg-red-900 w-28 h-20">padding</div>
+     </div>
+    </div>
+
+
+    <!-- https://tailwindcss.com/docs/space -->
+  4. Horizontal Space
+    <div class="container bg-black p-7 text-black">
+      <div class="flex space-x-4  ">
+        <div class="w-20 h-20 bg-white">01</div>
+        <div class="w-20 h-20 bg-white">02</div>
+        <div class="w-20 h-20 bg-white">03</div>
+      </div>
+    </div>
+    <!-- Space Between X -->
+  5. space-x-reverse
+    <div class="container bg-black p-7 text-black">
+      <div class="flex space-x-4 flex-row-reverse space-x-reverse ">
+        <div class="w-20 h-20 bg-white">01</div>
+        <div class="w-20 h-20 bg-white">02</div>
+        <div class="w-20 h-20 bg-white">03</div>
+      </div>
+    </div>
+  6. negative space
+    <div class="container bg-black p-7 text-black">
+      <div class="flex -space-x-4 ">
+        <div class="w-20 h-20 bg-white">01</div>
+        <div class="w-20 h-20 bg-white">02</div>
+        <div class="w-20 h-20 bg-white">03</div>
+      </div>
+    </div>
+    <!-- Space Between Y -->
+    Vertical Space
+    <div class="container bg-black p-7 text-black">
+      <div class=" flex flex-col space-y-4  ">
+        <div class="bg-white w-40 h-10 ">01</div>
+        <div class="bg-white w-40 h-10">02</div>
+        <div class="bg-white w-40 h-10">03</div>
+      </div>
+    </div>
+    space-y-reverse
+    <div class="container bg-black p-7 text-black">
+      <div class="flex flex-col space-y-4 flex-col-reverse space-y-reverse ">
+        <div class="bg-white w-40 h-10 ">01</div>
+        <div class="bg-white w-40 h-10">02</div>
+        <div class="bg-white w-40 h-10">03</div>
+      </div>
+    </div>
+    negative space
+    <div class="container bg-black p-7 text-black">
+      <div class=" flex flex-col -space-y-4  ">
+        <div class="bg-white w-40 h-10 ">01</div>
+        <div class="bg-white w-40 h-10">02</div>
+        <div class="bg-white w-40 h-10">03</div>
+      </div>
+    </div>
+  </body>
+</html>

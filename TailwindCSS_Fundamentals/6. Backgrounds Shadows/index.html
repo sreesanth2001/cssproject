@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Backgrounds & Shadows</title>
+  </head>
+  <body>
+    Background Images
+     <div class="container bg-black p-7 text-black font-bold">
+     <div class="h-10 bg-gradient-to-t from-violet-500 to cyan-500 text-center">bg-gradient-to-t</div>
+     <br>
+     <div class="h-10 bg-gradient-to-tr from-purple-200 to-indigo-500 text-center">bg-gradient-to-tr</div>
+     <br>
+     <div class="h-10 bg-gradient-to-r from-violet-100 to-fuchsia-500 text-center">bg-gradient-to-r</div>
+     <br>
+     <div class="h-10 bg-gradient-to-br from-purple-500 to-pink-800 text-center">bg-gradient-to-br</div>
+     <br>
+     <div class="h-10 bg-gradient-to-b from-amber-100 to-fuchsia-500 text-center">bg-gradient-to-b</div>
+     <br>
+     <div class="h-10 bg-gradient-to-bl from-red-800 to-fuchsia-300 text-center">bg-gradient-to-bl</div>
+     <br>
+     <div class="h-10 bg-gradient-to-l from-amber-800 to-indigo-300 text-center">bg-gradient-to-l</div>
+     <br>
+     <div class="h-10 bg-gradient-to-tl from-green 100 to-red-800 text-center">bg-gradient-to-tl</div>
+     <br>
+     <div class="bg-[url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dtechnology&psig=AOvVaw3fPbklRUEDE4XO1co82ZPO&ust=1729135102214000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjGncL4kYkDFQAAAAAdAAAAABAE)] bg-cover bg-center h-screen w-full"></div>
+     </div>
+    <!-- https://tailwindcss.com/docs/background-image -->
+
+    Shadows
+     <div class="bg-black container p-7 font-bold text-black flex gap-6">
+      <div class="'shadow-sm shadow-red-500 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-sm
+      </div>
+      <div class="shadow-md shadow-red-500 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-md
+      </div>
+      <div class="shadow-lg shadow-red-500 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-lg
+      </div>
+      <div class="shadow-xl shadow-red-500 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-xl
+      </div>
+      <div class="shadow-2xl shadow-red-500 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-2xl
+      </div>
+      <div class="shadow-inner shadow-red-500 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-inner
+      </div>
+      <div class="shadow-xl shadow-purple-800 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-xl
+      </div>
+      <div class="shadow-xl shadow-amber-800 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-xl  
+      </div>
+      <div class="shadow-xl shadow-blue-800 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-xl
+      </div>
+      <div class="shadow-xl shadow-green-800 h-24 w-24 p-2 rounded-md bg-white">
+        shadow-xl
+      </div>
+     </div>
+    
+    <!-- https://tailwindcss.com/docs/drop-shadow -->
+    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+
+    Gradients
+      <div class="container bg-black p-7 text-white">
+      <div class="bg-gradient-to-t from-blue-200 via-purple-500 to-indigo-500 p-4 m-4">
+      </div>
+      <div class="bg-gradient-to-b from-transparent via-purple-500 to-indigo-500 p-4 m-4">
+      </div>
+      <div class="bg-gradient-to-r from-red-500 via-transparent to-indigo-500 p-4 m-4">
+      </div>
+      <div class="bg-gradient-to-l from-neutral-500 via-current to-indigo-500 p-4 m-4">
+      </div>
+      <div class="bg-gradient-to-b from-transparent via-lime-500 to-indigo-500 p-4 m-4">
+        
+      </div>
+      </div>
+    <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+  </body>
+</html>
